@@ -153,7 +153,7 @@ This project is an implementation of REST API end points and to handle Blog-post
 MongoDB (Atlas)
 
 # Installation
-- Link : https://github.com/Eswar133/blog-api/edit/main/install.md
+- Link : https://github.com/Eswar133/blog-api/blob/main/install.md
  
 
   
