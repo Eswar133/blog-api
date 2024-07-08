@@ -151,6 +151,9 @@ This project is an implementation of REST API end points and to handle Blog-post
 - Postman (testing)
 ## Database
 MongoDB (Atlas)
+
+# Installation
+- Link : https://github.com/Eswar133/blog-api/edit/main/install.md
  
 
   
