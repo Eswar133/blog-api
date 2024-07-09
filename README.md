@@ -154,6 +154,9 @@ MongoDB (Atlas)
 
 # Installation
 - Link : https://github.com/Eswar133/blog-api/blob/main/install.md
+
+# Instructions for Mango DB atlas 
+- Link : https://github.com/Eswar133/blog-api/blob/main/mangodb%20installation.md
  
 
   
