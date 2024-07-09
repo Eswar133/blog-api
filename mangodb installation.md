@@ -10,13 +10,13 @@
 ## Whitelist Your IP Address
 - Go to the "Network Access" tab.
 - Click "Add IP Address."
-- Add your current IP address or allow access from anywhere (0.0.0.0/0).
+- Add the current IP address or allow access from anywhere (0.0.0.0/0).
 ## Get the Connection String
 - Go to the "Clusters" tab.
-- Click "Connect" for your cluster.
+- Click "Connect" for the cluster.
 - Choose "Connect Your Application."
 - Copy the connection string.
 # Update Your Application's Configuration
-- Open config.js in your project.
-- Replace mongoURI with the connection string from MongoDB Atlas, replacing <username> and <password> with your MongoDB Atlas credentials.
+- Open config.js in the project.
+- Replace mongoURI with the connection string from MongoDB Atlas, replacing <username> and <password> with the MongoDB Atlas credentials.
 
