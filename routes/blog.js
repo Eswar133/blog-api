@@ -3,11 +3,25 @@ const router = express.Router();
 const Blog = require('../models/blog');
 const auth = require('../middleware/auth');
 
-// Get all blog posts
+// Get all blog posts with pagination
 router.get('/', async (req, res) => {
+  const { page = 1, limit = 10 } = req.query;
+  
   try {
-    const blogs = await Blog.find().populate('author', 'username email');
-    res.status(200).json(blogs);
+    const blogs = await Blog.find()
+      .populate('author', 'username email')
+      .skip((page - 1) * limit)
+      .limit(parseInt(limit));
+
+    const total = await Blog.countDocuments();
+    const totalPages = Math.ceil(total / limit);
+
+    res.status(200).json({
+      blogs,
+      page: parseInt(page),
+      totalPages,
+      totalBlogs: total
+    });
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
