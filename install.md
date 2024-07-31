@@ -1,6 +1,6 @@
 ### Installation
 #### Clone the Repository
-- git clone https://github.com/your-username/blog-api.git
+- git clone https://github.com/Eswar133/blog-api.git
 - cd blog-api
 #### Install Dependencies
 - npm install
